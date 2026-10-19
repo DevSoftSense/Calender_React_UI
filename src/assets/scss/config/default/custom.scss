@@ -1,0 +1,101 @@
+/*
+Template Name: Velzon - Admin & Dashboard Template
+Author: Themesbrand
+Website: https://themesbrand.com/
+Contact: support@themesbrand.com
+File: Custom Css File
+*/
+
+.navbar-brand-box {
+    max-width: 100%;
+    padding: .55rem .45rem .15rem .5rem;
+    text-align: center;
+    transition: all .1s ease-out;
+}
+
+:is([data-layout="vertical"], [data-layout="semibox"])[data-sidebar-size="sm"] .navbar-brand-box {
+    background-color: #fff;
+    background-color: var(--vz-vertical-menu-bg);
+    box-sizing: border-box;
+    height: 70px;
+    padding: .55rem .35rem .25rem;
+    position: fixed;
+    top: 0;
+    width: 70px;
+    width: var(--vz-vertical-menu-width-sm);
+    z-index: 1;
+}
+
+.brand-logo-icon {
+    border-radius: 14px;
+    display: block;
+    flex-shrink: 0;
+    object-fit: contain;
+    width: auto;
+}
+
+.brand-logo-expanded {
+    align-items: center;
+    display: inline-flex;
+    gap: .55rem;
+    justify-content: flex-start;
+    max-width: 100%;
+    min-height: 70px;
+    width: 100%;
+}
+
+.brand-logo-text {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.05;
+    margin-left: 0;
+    max-width: 12rem;
+    opacity: 1;
+    overflow: hidden;
+    text-align: left;
+    transition: opacity .05s ease .12s, max-width .1s ease .12s;
+    white-space: nowrap;
+}
+
+.brand-logo-title {
+    color: #6d7080;
+    color: var(--vz-vertical-menu-item-color);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .01em;
+}
+
+.brand-logo-subtitle {
+    color: #6d7080;
+    color: var(--vz-vertical-menu-item-color);
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: .8;
+}
+
+:is([data-layout="vertical"], [data-layout="semibox"])[data-sidebar-size="sm"] {
+    .calendar-sidebar-extras,
+    .items-sidebar-filters,
+    .assign-sidebar-panel,
+    .reminders-sidebar-panel,
+    .attachments-sidebar-panel,
+    .activity-sidebar-panel,
+    .settings-sidebar-panel {
+        display: none !important;
+    }
+}
+
+.logo-light {
+    .brand-logo-title {
+        // color: #fff;
+        color: var(--vz-vertical-menu-item-color);
+    }
+
+    .brand-logo-subtitle {
+        // color: rgba(255, 255, 255, 0.85);
+        color: var(--vz-vertical-menu-item-color);
+        opacity: 1;
+    }
+}
